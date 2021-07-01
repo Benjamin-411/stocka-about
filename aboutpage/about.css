@@ -1,0 +1,270 @@
+/*  */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/*  */
+
+:root {
+    --clr-green: #00B200;
+    --clr-white: #fff;
+    --clr-grey: #666;
+    --clr-black: #111;
+    --ff-main: 'Roboto';
+    --ff-das: 'Poppins';
+}
+
+html {}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+
+/*  */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Images resizing */
+
+.principles .principles-card img {
+    width: 70%;
+    margin: 1rem auto;
+}
+
+.learn img,
+.work img {
+    width: 60%;
+    border-radius: .4rem;
+}
+
+
+/* text format */
+
+.text-1 {
+    font-family: sans-serif;
+    font-size: .9rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    .text-1 {
+        font-size: 1.2rem;
+    }
+    .text-2 {
+        font-size: .8rem !important;
+    }
+    .text-3 {
+        font-size: 1.2rem !important;
+    }
+    .text-4 {}
+}
+
+.text-2 {
+    font-size: .7rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+.text-3 {
+    font-size: .8rem;
+    margin-bottom: .4rem;
+    color: var(--clr-black);
+    font-weight: light;
+}
+
+.text-4 {
+    text-align: center;
+    padding-top: .7rem;
+    font-weight: lighter;
+    font-size: 1.3rem;
+}
+
+.text-5 {
+    text-align: center;
+    font-size: .8rem;
+    padding: 0 .5rem;
+}
+
+.found h1 {
+    font-size: 1.5rem;
+    margin-bottom: .4rem;
+    font-weight: bold;
+}
+
+section {
+    border-bottom: .1rem solid var(--clr-grey);
+}
+
+.btn-sup {
+    padding: .2rem;
+    color: var(--clr-white);
+    display: inline-block;
+    border: .1rem solid var(--clr-green);
+    background-color: var(--clr-green);
+    border-radius: .3rem;
+    font-size: .5rem;
+    font-weight: 600;
+    margin-bottom: .2rem
+}
+
+@media screen and (min-width: 600px) {
+    .btn-sup {
+        padding: .5rem;
+        margin-top: 1rem;
+    }
+}
+
+
+/* container content */
+
+.container {
+    margin: 1rem auto;
+    width: min(90%, 70.5rem);
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        margin: 3rem 3rem;
+    }
+    .container-1 {
+        margin: 2.5rem;
+    }
+}
+
+.container-1 {
+    margin: 2rem;
+}
+
+
+/* card */
+
+.principles-card {
+    background: blue;
+    width: 13rem;
+    height: 18rem;
+    border-radius: .5rem;
+    box-shadow: .1rem .1rem .1rem #e2e6e8;
+    margin-bottom: .7rem;
+}
+
+
+/* principles */
+
+.principles {
+    padding: 1.5rem 4rem;
+}
+
+@media screen and (min-width: 425px) {
+    .principles {
+        padding: 1.5rem 5rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .principles {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 1rem;
+        padding: 1.5rem 3rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .principles {
+        padding: 1.5rem 5rem;
+    }
+}
+
+
+/* Section containing How it works and more ways to learn  */
+
+.learn-work {
+    margin: 0 2rem;
+}
+
+.learn,
+.work {
+    display: flex;
+}
+
+.learn>*,
+.work>* {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+}
+
+.work div img {
+    margin-left: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .learn-right,
+    .work-left {
+        padding-top: 8rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .learn-right,
+    .work-left {
+        padding-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .learn-right,
+    .work-left {
+        margin-top: 1rem;
+    }
+}
+
+.learn-right {
+    margin-left: -2rem;
+}
+
+
+/* Founder Section */
+
+.found img {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .found {
+        display: flex;
+    }
+    .found>* {
+        flex-basis: 100%;
+    }
+    .found img {
+        display: flex;
+        width: 70%;
+    }
+    .found-right {}
+}
